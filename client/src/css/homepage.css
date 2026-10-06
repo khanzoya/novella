@@ -1,0 +1,645 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+/* #HEADER {
+  width: 100%;
+} */
+/* .responsive-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0px;
+} */
+
+/* h1 {
+  border: solid 10px #999999;
+  text-align: center;
+  font-size: 80px;
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+} */
+.bg {
+  position: relative;
+  background-image: url("https://www.wallpapertip.com/wmimgs/0-3795_wallpaper-books-library-shelves-lighting-hd-book-library.jpg");
+  opacity: 0.7;
+  background-size: 100%;
+  height: 500px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+    border: solid 5px #999999;
+    font-size: 30px;
+  }
+}
+
+h4 {
+  text-align: center;
+  color: whitesmoke;
+}
+.nfic_box h4 {
+  color: #555555;
+}
+/* body {
+  background: #e8daf9;
+} */
+
+img {
+  opacity: 90%;
+  margin: 50px 50px;
+  width: 1300px;
+}
+
+.bg {
+  position: relative;
+  background-image: url(images/bg.jpg);
+  opacity: 70%;
+
+  background-size: 100%;
+  height: 500px;
+}
+/* 
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%);
+
+  margin-top: 500px;
+  padding-left: 100px;
+} */
+/* 
+.dropdown {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+} */
+
+.container blockquote {
+  font-size: "2vw";
+  text-align: center;
+  margin: 10px;
+}
+
+#NonFiction h1,
+#Fiction h1,
+#Self-help h1,
+#Autobiographies h1,
+#True-Crime h1,
+#Sports h1,
+#Biographies h1,
+#fantasy h1,
+#young_romance h1,
+#classic h1,
+#crime_and_thriller h1,
+#horror h1 {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+button {
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 10px;
+  border: none;
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #999999;
+  color: white;
+}
+
+a:link {
+  color: #555555;
+  text-decoration: none;
+}
+
+a:visited {
+  font-size: 10%;
+  color: #262626;
+}
+
+a:active {
+  color: #d9d9d9;
+}
+
+table,
+tr,
+td,
+th {
+  border: solid 5px gray;
+  border-collapse: collapse;
+}
+
+#searchbar {
+  justify-self: center;
+  margin-top: 200px;
+  margin-left: 30%;
+  font-size: 20px;
+  width: 40%;
+  border: solid 10px whitesmoke;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+#searchicon {
+  margin-left: -45px;
+  border: 1px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  #searchbar {
+    font-size: 15px;
+    border: solid 5px whitesmoke;
+    border-radius: 30px;
+    width: 40%;
+    /* margin-top: 150px;
+    margin: auto; */
+  }
+
+  #searchicon {
+    font-size: 15px;
+    border: none;
+  }
+}
+
+.non_fiction {
+  display: block;
+}
+
+/* flex box accordian commom class for fic and non fic */
+.accordion {
+  margin: auto;
+  width: 1000px;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+/* NON-FICTION FLEX BOX STARTS */
+
+.nfic_box {
+  width: 230px;
+  height: 100%;
+  margin: 2px 0;
+  transition: all 0.45s ease;
+  border-radius: 20px;
+}
+.nfic_box h4 {
+  color: black;
+}
+
+.nfic_box h4 #True-Crime,
+.nfic_box h4 #Biographies {
+  color: white;
+}
+.nfic_box:first-child {
+  background: url(images/self_help.jpeg) center/cover no-repeat border-box;
+}
+.nfic_box:nth-child(2) {
+  background: url(images/autobiographies1.jpg) center/cover no-repeat border-box;
+}
+.nfic_box:nth-child(3) {
+  background: url(images/true_crime.jpg) center/cover no-repeat border-box;
+}
+.nfic_box:nth-child(4) {
+  background: url(images/sports.jpg) center/cover no-repeat border-box;
+}
+.nfic_box:last-child {
+  background: url(images/biographies.jpeg) center/cover no-repeat border-box;
+}
+.accordion:hover .nfic_box {
+  width: 150px;
+  text-align: center;
+  filter: grayscale(1);
+}
+.accordion .nfic_box:hover {
+  width: 450px;
+  filter: grayscale(0);
+}
+
+#Self-help .book_cover img,
+#Autobiographies .book_cover img,
+#True-Crime .book_cover img,
+#Sports .book_cover img,
+#Biographies .book_cover img {
+  height: 270px;
+  width: 200px;
+}
+
+/* FICTION-FLEX BOX STARTS */
+
+.fiction .accordion .box {
+  width: 230px;
+  height: 100%;
+  margin: 2px 0;
+  transition: all 0.45s ease;
+  border-radius: 20px;
+}
+.box h4 {
+  color: black;
+}
+.box:first-child {
+  background: url(images/fantasy_head.jpg) center/cover no-repeat border-box;
+}
+.box:nth-child(2) {
+  background: url(images/romance_bg.jpg) center/cover no-repeat border-box;
+}
+.box:nth-child(3) {
+  background: url(images/classic.jpg) center/cover no-repeat border-box;
+}
+.box:nth-child(4) {
+  background: url(images/mystery_bg.webp) center/cover no-repeat border-box;
+}
+.box:last-child {
+  background: url(images/horror_bg.jpg) center/cover no-repeat border-box;
+}
+.accordion:hover .box {
+  width: 150px;
+  text-align: center;
+  filter: grayscale(1);
+}
+.accordion .box:hover {
+  width: 450px;
+  filter: grayscale(0);
+}
+/* FLEX BOX END */
+/* accordian flex box media query */
+@media (max-width: 768px) {
+  /* Adjust the width and padding of the accordion */
+  .accordion {
+    width: 90%; /* Adjust as needed */
+    padding: 20px;
+    margin: 2px 0; /* Adjust as needed */
+  }
+
+  /* Adjust the width and height of book covers */
+  #Self-help .book_cover img,
+  #Autobiographies .book_cover img,
+  #True-Crime .book_cover img,
+  #Sports .book_cover img,
+  #Biographies .book_cover img,
+  #fantasy .book_cover img,
+  #young_romance .book_cover img,
+  #classic .book_cover img,
+  #crime_and_thriller .book_cover img,
+  #horror .book_cover img {
+    height: 200px;
+    width: 150px; /* To maintain aspect ratio */
+  }
+
+  /* Adjust the width of the toggle switch */
+  .switch {
+    width: 150px; /* Adjust as needed */
+  }
+  .accordion .box:hover {
+    height: 450px;
+    filter: grayscale(0);
+  }
+}
+
+/* For screens with a maximum width of 576px */
+@media (max-width: 576px) {
+  /* Adjust the width and padding of the accordion */
+  .accordion {
+    width: 90%;
+    height: 450px; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  /*  */
+  /* Adjust the width and margin of the boxes */
+  .accordion .box,
+  .accordion .nfic_box {
+    width: 100%; /* Boxes take full width */
+    margin: 2px 0; /* Add vertical spacing between boxes */
+  }
+  /* Set the width of the hovered accordion box to 100% */
+  .accordion:hover .box,
+  .accordion:hover .nfic_box {
+    height: 450px;
+  }
+  /* Adjust the width of the toggle switch */
+  .switch {
+    width: 120px; /* Adjust as needed */
+  }
+
+  #Self-help .book_cover img,
+  #Autobiographies .book_cover img,
+  #True-Crime .book_cover img,
+  #Sports .book_cover img,
+  #Biographies .book_cover img,
+  #fantasy .book_cover img,
+  #young_romance .book_cover img,
+  #classic .book_cover img,
+  #crime_and_thriller .book_cover img,
+  #horror .book_cover img {
+    width: 50; /* Adjust as needed */
+    height: 170; /* To maintain aspect ratio */
+  }
+}
+/*  */
+
+#biography .book_cover img {
+  width: 200px;
+  height: 270px;
+}
+.fantasy {
+  position: relative;
+  object-fit: contain;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  color: white;
+}
+.fantasy_heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*  */
+
+#Self-help .book_cover img,
+#Autobiographies .book_cover img,
+#True-Crime .book_cover img,
+#Sports .book_cover img,
+#Biographies .book_cover img,
+#fantasy .book_cover img,
+#young_romance .book_cover img,
+#classic .book_cover img,
+#crime_and_thriller .book_cover img,
+#horror .book_cover img {
+  width: 200px;
+  height: 270px;
+}
+/*  */
+/*  */
+.fiction {
+  display: block;
+}
+/*  */
+/*  */
+/* TOGGLE BUTTON */
+
+.fic_nfic {
+  margin-top: 10%;
+  /* font: #7a6499; */
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TOGGLE BUTTON */
+.switch {
+  margin-top: 10%;
+  margin-bottom: 3%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #51afe5f7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  justify-items: center;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #c7ace7;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c4a6ee;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(200px);
+  -ms-transform: translateX(200px);
+  transform: translateX(200px);
+}
+
+/* ROUNDED SLIDERS */
+.slider.round {
+  /* padding-left: 40%; */
+  text-align: center;
+  font-size: 100%;
+  padding-top: 5%;
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#slider-bar {
+  justify-content: auto;
+  margin: 0 auto;
+  display: block;
+  float: center;
+  margin-top: 10px;
+  margin-left: 80px;
+  color: white;
+  font: bold serif;
+}
+
+.container footer {
+  padding-left: 42%;
+  align-content: center;
+}
+
+/* HOMEBOOKCARD CSS */
+
+.book_cover {
+  margin: 3%;
+  height: 200px;
+  width: 180px;
+  display: inline flex;
+  /* margin-bottom: 15px; */
+  /* border: #555555 solid 1px; */
+}
+
+.book_cover:hover {
+  transform: scale(1.1);
+  /* width: 220px;
+  height: 180px;  */
+  object-fit: cover;
+  transition: opacity 0.5s;
+}
+
+.book_cover:hover .book-image {
+  opacity: 0; /* Hide the image on hover */
+}
+
+.book_cover .book-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20%, -20%);
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 5px;
+  transition: opacity 0.5s; /* Add a smooth transition for the details */
+  opacity: 0; /* Hide the details by default */
+}
+
+.book_cover:hover .book-details {
+  opacity: 1;
+}
+
+.book_cover .read-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.book_cover:hover .read-button {
+  opacity: 1; /* Show the button on hover */
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .book_cover {
+    width: 140px;
+    height: 200px;
+  }
+  .book-details {
+    padding: 5px;
+    font-size: 0.8em;
+  }
+  .read-button {
+    padding: 3px 6px;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .book_cover {
+    width: 120px;
+    height: 180px;
+  }
+  .book-details {
+    padding: 3px;
+    font-size: 0.7em;
+  }
+  .read-button {
+    padding: 2px 4px;
+    font-size: 0.7em;
+  }
+}

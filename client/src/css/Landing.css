@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+/* .firstpart {
+  flex: 1;
+  background: url("images/bookreadin.avif") right;
+  background-size: 80%;
+  background-repeat: no-repeat;
+} */
+
+#page1 {
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Layout items in a row */
+}
+
+#page1 h1 {
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
+  font-size: 5.1vw;
+  text-align: left;
+  order: 1; /* Text appears first */
+  margin-right: 20px; /* Add some space between text and image */
+}
+
+#page1 img {
+  max-width: 50%;
+  order: 2;
+  max-height: 90%; /* Image appears second */
+}
+
+#page2 {
+  /* margin-top: 70px; */
+  background-color: #11111c;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#page2 h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#page2 h1 {
+  font-family: cooper;
+  font-weight: 500;
+  font-size: 41px;
+  width: 60%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#page2 h1::after {
+  content: "";
+  position: absolute;
+  height: 60px;
+  z-index: 99;
+  width: 190px;
+  /* background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg); */
+  left: 42%;
+  margin-top: -7px;
+  background-size: 99;
+}
+
+#about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 30px;
+  width: 20%;
+  /* background-color: red; */
+}
+
+#about-us h3 {
+  font-weight: 300;
+  margin-right: 20px;
+  font-family: cooper;
+}
+
+#green-effect {
+  /* background-color: red; */
+  padding: 0px 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+
+#about-us img {
+  position: relative;
+  margin: 5px;
+  width: 15px;
+  z-index: 99;
+  height: 15px;
+}
+
+#green {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  -webkit-transition: left 0.4s ease;
+  -o-transition: left 0.4s ease;
+  transition: left 0.4s ease;
+  background-color: springgreen;
+  left: -100%;
+}
+
+#green-effect:hover #green {
+  left: 0;
+}
+
+@media (max-width: 600px) {
+  #page1 {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  #page1 h1 {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+    text-align: center; /* Center the text */
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+
+  #page1 img {
+    max-width: 80%; /* Adjust image size for smaller screens */
+    margin-bottom: 20px; /* Add space between text and image */
+  }
+}
+
+@media (max-width: 600px) {
+  #page2 {
+    background-color: #11111c;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  #page2 h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+  }
+
+  #page2 h1 {
+    font-family: cooper;
+    font-weight: 500;
+    font-size: 20px;
+    width: 80%;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  #page2 h1::after {
+    content: "";
+    position: absolute;
+    height: 38px;
+    z-index: 99;
+    width: 100px;
+    /* background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg); */
+    left: 28%;
+    margin-top: -8px;
+    background-size: 99;
+  }
+
+  #about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 30px;
+    width: 30%;
+    /* background-color: red; */
+  }
+
+  #about-us h3 {
+    font-weight: 300;
+    margin-right: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    font-family: cooper;
+  }
+
+  #green-effect {
+    /* background-color: red; */
+    padding: 2px 9px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid #fff;
+  }
+
+  #about-us img {
+    position: relative;
+    z-index: 99;
+    height: 15px;
+  }
+
+  #green {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: left 0.4s ease;
+    -o-transition: left 0.4s ease;
+    transition: left 0.4s ease;
+    background-color: springgreen;
+    left: -100%;
+  }
+
+  #green-effect:hover #green {
+    left: 0;
+  }
+}

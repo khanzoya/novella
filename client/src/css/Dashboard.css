@@ -1,0 +1,39 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8f8f8;
+  height: 90vh;
+  position: relative;
+}
+.dashboard img {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1; /* Ensure the image appears above other elements */
+}
+
+.dashboard-box {
+  margin-top: 5%;
+  background-color: rgb(213, 217, 221);
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  height: 15%;
+  margin-top: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .dashboard-box {
+    width: 80%; /* Make dashboard boxes wider on smaller screens */
+  }
+}
